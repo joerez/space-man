@@ -13,12 +13,24 @@ for words in word_file:
     a = words.replace("\n", "")
     list_of_words.append(a)
 
-# Declare default variables
+# Declare default stuff
 
 tries_left = 7
 previously_used_letters = []
 space_man = ""
 encrypted_word = ""
+
+def print_game():
+    print("\n")
+    print("tries left:")
+    print(tries_left)
+    print("\n")
+    print(space_man)
+    print("\n")
+    print(encrypted_word)
+    print("\n")
+    print("Previously guessed letters:")
+    print(previously_used_letters)
 
 # Select a random word from the list and set it equal to the secret word.
 list_length = len(list_of_words)
@@ -30,18 +42,35 @@ the_secret_word = list_of_words[randint(0, list_length) - 1]
 
 encrypted_word = re.sub('[a-z]', '_ ', the_secret_word)
 
-
 # Space man game
 def space_man():
-    while (tries_left):
-        print(encrypted_word)
-        print(previously_used_letters)
-        word_guess = input("Guess a letter: ")
-        previously_used_letters.append(word_guess)
+    while (tries_left > 0):
+        print_game()
+        letter_guess = input("\nGuess a letter: ")
+        if letter_guess not in previously_used_letters:
+            previously_used_letters.append(word_guess)
+
+            if letter_guess in the_secret_word:
+                print("letter found")
+            else:
+                print("letter not found")
+                tries_left - 1
+
+
+
+
+
+
+        else:
+            print("you already guessed that letter!")
 
 
 
 space_man()
+
+
+
+
 """
  Collect user input in the form of a letter from A-Z. Save this letter to an array called Used Letters. Compare this input to the used letters array so users don’t select the same letter twice.
 
