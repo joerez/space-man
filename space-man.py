@@ -80,7 +80,6 @@ def print_game():
 
     print("\n")
     print(encrypted_word)
-    print(the_secret_word)
     print("\n")
     print("Previously guessed letters:")
     print(previously_used_letters)
@@ -91,12 +90,11 @@ list_length = len(list_of_words)
 the_secret_word = list_of_words[randint(0, list_length) - 1]
 
 
+# Adds a space between every character in the secret word, so when it's encrypted, it looks like: _ _ _
+the_secret_word = the_secret_word.replace("", " ")
 
 # encrypt word
 # this function looks for all letters a through z in the_secret_word, and replaces them with underscores.
-the_secret_word = the_secret_word.replace("", " ")
-
-
 encrypted_word = re.sub('[a-z]', '_', the_secret_word)
 
 
