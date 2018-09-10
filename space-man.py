@@ -81,7 +81,7 @@ def print_game():
     print("\n")
     print(encrypted_word)
     print("\n")
-    print("Previously guessed letters:")
+    print("Previously guessed characters:")
     print(previously_used_letters)
 
 # Select a random word from the list and set it equal to the secret word.
@@ -106,7 +106,7 @@ def space_man():
     while (tries_left > 0):
         print_game()
         if '_' in encrypted_word:
-            letter_guess = input("\nGuess a letter: ")
+            letter_guess = input("\nGuess a letter: ").lower()
             if letter_guess not in previously_used_letters:
                 previously_used_letters.append(letter_guess)
 

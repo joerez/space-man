@@ -3,17 +3,17 @@ asteroid
 the big dipper
 black hole
 celestial
-Ceres
+ceres
 cluster
 comet
 constellation
 cosmic dust
 dark matter
 dwarf planet
-Earth
+earth
 exoplanet
 falling star
-Galaxy
+galaxy
 gas giant
 heavenly body
 jupiter
