@@ -27,49 +27,44 @@ def show_space_man():
         print(space_man)
     elif tries_left == 6:
         space_man = """
-        .-'''-.
-       /= ___  l
-      |- /~~~\  |
-      |=( '.' ) |
-      \__\_=_/__/
+        O
       """
         print(space_man)
     elif tries_left == 5:
         space_man = """
-
-        .-'''-.
-       /= ___  l
-      |- /~~~\  |
-      |=( '.' ) |
-      \__\_=_/__/
-       {_______}
-       *       `
-      .      [] .
-      | ooo     |
-       \_______/
-
+        O
+        |
         """
         print(space_man)
     elif tries_left == 4:
-        space_man == """
-
-        .-'''-.
-       /= ___  l
-      |- /~~~\  |
-      |=( '.' ) |
-      \__\_=_/__/
-       {_______}
-     l` *       `
-    l= .     [] .
-   l  /|ooo     |
-  (   )\_______/
-   l``l
-    `-
+        space_man = """
+        0
+        |l
+        """
+        print(space_man)
+    elif tries_left == 3:
+        space_man = """
+        O
+       /|l
+        """
+        print(space_man)
+    elif tries_left == 2:
+        space_man = """
+        O
+       /|l
+       /
+        """
+        print(space_man)
+    elif tries_left == 1:
+        space_man = """
+        O
+       /|l
+       / l
 
         """
         print(space_man)
-
-
+    elif tries_left == 0:
+        print(space_man)
     else:
         print(space_man)
 
@@ -142,7 +137,31 @@ def space_man():
             print("you win")
             break
     if (tries_left == 0):
+        space_man = """
+                      <>
+        .-'''-.       ||::::::==========
+       /= ___  l      ||::::::==========
+      |- /~~~\  |     ||::::::==========
+      |=( '.' ) |     ||================
+      l__l_=_/__/     ||================
+       {_______}      ||================
+     /` *       `'--._||
+    /= .     [] .     { >
+   /  /|ooo     |`'--'||
+  (   )l_______/      ||
+   l``l/       l      ||
+    `-| ==    l_|     ||
+      /         |     ||
+     |=   >l  __/     ||
+     l   l |- --|     ||
+      l __| l___/     ||
+ jgs  _{__} _{__}     ||
+     (    )(    )     ||
+ ^^~  `'''  `'''  ~^^^~^^~~~^^^~^^^~^^^~^^~^
+    """
+        print(space_man)
         print('you lose')
+        print('The word was:')
         print(the_secret_word)
 
 
