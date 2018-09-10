@@ -16,29 +16,29 @@ falling star
 Galaxy
 gas giant
 heavenly body
-Jupiter
+jupiter
 lodestar
-Mars
-Mercury
+mars
+mercury
 meteor
-Milky
+milky
 moon
 nebula
-Neptune
-the North Star
+neptune
+the north star
 nova
 planet
-Pluto
+pluto
 pulsar
 quasar
 red giant
 satellite
-Saturn
+saturn
 shooting star
 solar system
 star
 sun
 supernova
-Uranus
-Venus
+uranus
+venus
 white dwarf
