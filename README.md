@@ -10,4 +10,4 @@ Give it one of these bad boys:
 ```
 python space-man.py
 ```
-Then BASK in the ambience of the space man!
+Then **BASK** in the ambience of the space man!
